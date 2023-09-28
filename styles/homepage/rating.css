@@ -60,7 +60,7 @@
 /* Mobile S-L */
 @media (min-width: 320px) and (max-width: 525px){
     .presentation-5stars-img {
-        width: 64px;
+        width: 90px;
     }
     .presentation-rating{
         margin: 50px 30px 0 30px;
