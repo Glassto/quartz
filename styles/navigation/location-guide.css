@@ -1,4 +1,35 @@
 .location-guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  text-transform: uppercase;
+  font-family: Nunito;
+  font-size: 14px;
+}
+.location-guide-svg {
+  width: 18px;
+  height: 18px;
+}
+.p-location-guide {
+  margin: 0;
+  padding: 12px 0px;
+}
+
+.target-L,
+.target-ST,
+.target-S {
+  color: white;
+}
+
+/* Laptop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .target-L {
+    color: black;
+  }
+
+  .location-guide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,79 +38,49 @@
     text-transform: uppercase;
     font-family: Nunito;
     font-size: 14px;
-}
-.img-location-guide {
+  }
+  .location-guide-svg {
     width: 18px;
     height: 18px;
-}
-.p-location-guide {
-    margin: 0;
-    padding: 12px 0px;
+  }
 }
 
-.target-L, 
-.target-ST,
-.target-S {
-    color: white;
+/* Tablets */
+@media (min-width: 526px) and (max-width: 768px) {
+  .target-ST {
+    color: black;
+  }
+
+  .location-guide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-size: 12px;
+  }
+  .location-guide-svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-/* Portrait Tablets */
-@media (min-width: 767px) and (max-width: 1024px) {
-    .target-L {
-        color: black;
-    }
+/* Mobile S-L */
+@media (min-width: 320px) and (max-width: 526px) {
+  .target-S {
+    color: black;
+  }
 
-    .location-guide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 18px;
-    
-        text-transform: uppercase;
-        font-family: Nunito;
-        font-size: 14px;
-    }
-    .img-location-guide {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-/* Small Tablets */
-@media (min-width: 481px) and (max-width: 767px) {
-    .target-ST {
-        color: black;
-    }
-
-    .location-guide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 18px;
-    
-        text-transform: uppercase;
-        font-family: Nunito;
-        font-size: 14px;
-    }
-    .img-location-guide {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-/* Smartphones */
-@media (max-width: 480px) {
-    .target-S {
-        color: black;
-    }
-
-    .location-guide {
-        text-transform: uppercase;
-        font-family: Nunito;
-        font-size: 12px;
-    }
-    .img-location-guide {
-        width: 16px;
-        height: 16px;
-    }
+  .location-guide {
+    text-transform: uppercase;
+    font-family: Nunito;
+    font-size: 10px;
+    gap: 14px;
+  }
+  .location-guide-svg {
+    width: 14px;
+    height: 14px;
+  }
 }
