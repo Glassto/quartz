@@ -3,6 +3,7 @@ nav.sticky {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 2656651;
 }
 
 .nav-background {
@@ -10,10 +11,6 @@ nav.sticky {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-  position: fixed;
-  top: 43px;
-  z-index: 2656651;
 
   background-color: white;
   height: 70px;
