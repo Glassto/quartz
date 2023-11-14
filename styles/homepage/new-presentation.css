@@ -13,7 +13,7 @@ div.sticky {
 .presentation-green-gradient {
   z-index: 1;
   flex: 1;
-  padding: 89px 80px;
+  padding: 89px 70px;
   max-height: 170px;
   background: linear-gradient(
     90deg,

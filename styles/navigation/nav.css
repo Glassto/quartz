@@ -1,12 +1,13 @@
 html {
   scroll-behavior: smooth;
-} 
+}
+
 nav.sticky {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2656651;
+  z-index: 10;
 
   transition: animate__fadeInUp;
 }
