@@ -163,9 +163,9 @@ nav.sticky {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 29px;
+    gap: 26px;
 
-    font-size: 32px;
+    font-size: 26px;
     font-family: Poppins;
     font-weight: 300;
   }
@@ -177,11 +177,11 @@ nav.sticky {
     gap: 60px;
   }
   .nav-quick-menu-button-call-text {
-    display: none;
+    font-size: 14px;
   }
   .nav-quick-menu-button-call-svg {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 }
 

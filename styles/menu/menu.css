@@ -10,10 +10,61 @@
   margin: 70px 0 0 0;
 }
 
+.menu-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 30px 80px 0 80px;
+  gap: 14px;
+}
+.category-name {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+
+  height: 54px;
+  padding: 0px 0 0px 30px;
+  gap: 30px;
+  border-radius: 4px;
+  border: 2px solid #6da610;
+}
+.category-name-text {
+  margin: 0;
+
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 24px;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 54px;
+  width: 54px;
+  border-radius: 4px;
+  border: 2px solid #6aa310;
+  background: linear-gradient(90deg, #6aa310 0%, #599711 96.76%);
+}
+.arrow0,
+.arrow1,
+.arrow2 {
+  transition: 0.2s ease-out;
+}
+.rotate {
+  transition: 0.2s ease-out;
+  rotate: 180deg;
+}
+
 /* Tablets */
 @media (min-width: 525px) and (max-width: 768px) {
   .menu-section-text {
     font-size: 24px;
+  }
+  .menu-category {
+    margin: 30px 30px 0 30px;
   }
 }
 
@@ -22,5 +73,27 @@
   .menu-section-text {
     margin: 50px 0 0 0;
     font-size: 20px;
+  }
+  .menu-category {
+    margin: 20px 30px 0 30px;
+    gap: 10px;
+  }
+  .category-name {
+    height: 44px;
+    padding-left: 20px;
+    gap: 20px;
+  }
+  .category-name-text {
+    font-size: 18px;
+  }
+  .category-name-ico {
+    width: 16px;
+  }
+  .dropdown {
+    height: 44px;
+    width: 44px;
+  }
+  .dropdown-1-arrow {
+    height: 18px;
   }
 }

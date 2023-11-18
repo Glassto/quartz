@@ -76,11 +76,11 @@
   .location-guide {
     text-transform: uppercase;
     font-family: Nunito;
-    font-size: 10px;
+    font-size: 12px;
     gap: 14px;
   }
   .location-guide-svg {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 }

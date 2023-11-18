@@ -98,6 +98,7 @@
         </div>
       </div>
     </div>
+
     <div class="new-section">
       <div class="new-section-title">
         <p class="new-section-text">NOU</p>
@@ -123,23 +124,57 @@
         </div>
       </div>
     </div>
+
     <div class="menu-section">
       <div class="menu-section-title">
         <p class="menu-section-text">MENIU</p>
       </div>
-      <!-- <div class="menu-breakfast-category">
+
+      <div class="menu-category">
         <div class="category-name">
-          <img src="" alt="" />
-          <p>Breakfast</p>
+          <img
+            class="category-name-ico"
+            src="img/icons/food-category-breakfast.svg"
+            alt=""
+          />
+          <p class="category-name-text">Breakfast</p>
         </div>
-        <div class="dropdown">
-          <img src="" alt="" />
+        <div onclick="checkWhichArrow(`Breakfast`)" class="dropdown">
+          <img class="arrow0" src="img/icons/chevron-down.svg" alt="" />
         </div>
-      </div>  -->
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/food-category-burger.svg"
+            alt=""
+          />
+          <p class="category-name-text">Burger</p>
+        </div>
+        <div onclick="checkWhichArrow(`Burger`)" class="dropdown">
+          <img class="arrow1" src="img/icons/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/food-category-maincourse.svg"
+            alt=""
+          />
+          <p class="category-name-text">Main Course</p>
+        </div>
+        <div onclick="checkWhichArrow(`Main Course`)" class="dropdown">
+          <img class="arrow2" src="img/icons/chevron-down.svg" alt="" />
+        </div>
+      </div>
     </div>
 
     <div class="wrk-progress">
-      <p class="wrk-text">Work In Progress</p>
+      <p class="wrk-text">work in progress</p>
     </div>
     <style>
       .wrk-progress {
@@ -149,14 +184,19 @@
         z-index: 3;
         text-align: center;
 
-        border: 1px solid rgba(255, 255, 255, 0.39);
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(2.6px);
+        border: 1px solid rgba(109, 166, 16, 0.2);
+        background: rgba(16, 96, 166, 0.01);
+        backdrop-filter: blur(4px);
       }
       .wrk-text {
         font-family: Outfit;
         font-weight: 500;
-        font-size: 18px;
+        letter-spacing: 0.3px;
+        font-size: 14px;
+      }
+      .cookies-hide {
+        display: none;
+        transition: 0.5 ease-in-out;
       }
     </style>
   </body>
