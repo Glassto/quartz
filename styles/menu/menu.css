@@ -48,14 +48,24 @@
   border: 2px solid #6aa310;
   background: linear-gradient(90deg, #6aa310 0%, #599711 96.76%);
 }
-.arrow0,
-.arrow1,
-.arrow2 {
+.arrow {
   transition: 0.2s ease-out;
 }
 .rotate {
   transition: 0.2s ease-out;
   rotate: 180deg;
+}
+.focus-icon {
+  content: url("/img/icons/light/food-category-breakfast.svg");
+}
+.focus-text {
+  color: white;
+}
+.focus-box {
+  background: linear-gradient(90deg, #6aa310 38.68%, #599711 91.18%);
+}
+.menu-link-svg {
+  height: 20px;
 }
 
 /* Tablets */
@@ -65,6 +75,9 @@
   }
   .menu-category {
     margin: 30px 30px 0 30px;
+  }
+  .category-name-text {
+    font-size: 20px;
   }
 }
 
@@ -93,7 +106,16 @@
     height: 44px;
     width: 44px;
   }
-  .dropdown-1-arrow {
+  .arrow0,
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5,
+  .arrow6 {
+    height: 18px;
+  }
+  .menu-link-svg {
     height: 18px;
   }
 }

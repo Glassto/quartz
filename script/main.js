@@ -12,18 +12,32 @@ window.onscroll = function() {
 }
 
 
-const arrow = document.querySelectorAll('.arrow0, .arrow1, arrow2');
-console.log(arrow)
-function checkWhichArrow(typeOfCategory) {
-  if (typeOfCategory === "Breakfast") {
-    rotate(0);
-  } else if (typeOfCategory === "Burger") {
-    rotate(1);
-  } else if (typeOfCategory === "Main Course") {
-    rotate(2)
-  }
+const rotateArrow = document.querySelectorAll('.arrow');
+const focusOnIcon = document.querySelectorAll('.category-name-ico');
+const focusOnText = document.querySelectorAll('.category-name-text');
+const focusOnBox = document.querySelectorAll('.category-name')
+const category = {
+  "Breakfast": 0,
+  "Burger": 1,
+  "Main Course": 2,
+  "Paste": 3,
+  "Salate": 4,
+  "Garnituri": 5,
+  "Sosuri": 6
+};
+
+
+function checkWhichCategory(typeOfCategory) {
+  const categoryIndex = category[typeOfCategory];
+  if (categoryIndex !== undefined);
+  rotate(categoryIndex);
+  focus(categoryIndex);
 }
 function rotate(nodeList) {
-  arrow[nodeList].classList.toggle("rotate");
+  rotateArrow[nodeList].classList.toggle("rotate");
 }
-
+function focus(nodeList) {
+  focusOnIcon[nodeList].classList.toggle("focus-icon");
+  focusOnText[nodeList].classList.toggle("focus-text");
+  focusOnBox[nodeList].classList.toggle("focus-box");
+}

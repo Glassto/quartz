@@ -45,13 +45,13 @@
   </style>
   <body>
     <div class="location-guide">
-      <img class="location-guide-svg" src="img/icons/loc-pin.svg" alt="" />
+      <img class="location-guide-svg" src="img/icons/dark/loc-pin.svg" alt="" />
       <p class="p-location-guide">Suceava, Strada Universității, Nr.32</p>
     </div>
 
     <nav class="nav-background">
       <div class="nav-menu-logo">
-        <img class="nav-menu-svg" src="img/icons/nav-menu.svg" alt="" />
+        <img class="nav-menu-svg" src="img/icons/dark/nav-menu.svg" alt="" />
         <p class="nav-logo-text">Quartz</p>
       </div>
       <div class="nav-quick-menu">
@@ -60,7 +60,7 @@
         <button class="nav-quick-menu-button-call">
           <img
             class="nav-quick-menu-button-call-svg"
-            src="img/icons/phone.svg"
+            src="img/icons/light/phone.svg"
             alt=""
           />
           <p class="nav-quick-menu-button-call-text">Sună</p>
@@ -94,7 +94,7 @@
           <div>pe <span class="optional-text">Google</span> Maps</div>
         </div>
         <div class="link">
-          <img class="link-svg" src="img/icons/link.svg" alt="" />
+          <img class="link-svg" src="img/icons/dark/link.svg" alt="" />
         </div>
       </div>
     </div>
@@ -134,13 +134,13 @@
         <div class="category-name">
           <img
             class="category-name-ico"
-            src="img/icons/food-category-breakfast.svg"
+            src="img/icons/dark/food-category-breakfast.svg"
             alt=""
           />
           <p class="category-name-text">Breakfast</p>
         </div>
-        <div onclick="checkWhichArrow(`Breakfast`)" class="dropdown">
-          <img class="arrow0" src="img/icons/chevron-down.svg" alt="" />
+        <div onclick="checkWhichCategory(`Breakfast`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
 
@@ -148,13 +148,13 @@
         <div class="category-name">
           <img
             class="category-name-ico"
-            src="img/icons/food-category-burger.svg"
+            src="img/icons/dark/food-category-burger.svg"
             alt=""
           />
           <p class="category-name-text">Burger</p>
         </div>
-        <div onclick="checkWhichArrow(`Burger`)" class="dropdown">
-          <img class="arrow1" src="img/icons/chevron-down.svg" alt="" />
+        <div onclick="checkWhichCategory(`Burger`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
 
@@ -162,13 +162,87 @@
         <div class="category-name">
           <img
             class="category-name-ico"
-            src="img/icons/food-category-maincourse.svg"
+            src="img/icons/dark/food-category-maincourse.svg"
             alt=""
           />
           <p class="category-name-text">Main Course</p>
         </div>
-        <div onclick="checkWhichArrow(`Main Course`)" class="dropdown">
-          <img class="arrow2" src="img/icons/chevron-down.svg" alt="" />
+        <div onclick="checkWhichCategory(`Main Course`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/dark/food-category-paste.svg"
+            alt=""
+          />
+          <p class="category-name-text">Paste</p>
+        </div>
+        <div onclick="checkWhichCategory(`Paste`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/dark/food-category-salate.svg"
+            alt=""
+          />
+          <p class="category-name-text">Salate</p>
+        </div>
+        <div onclick="checkWhichCategory(`Salate`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/dark/food-category-garnituri.svg"
+            alt=""
+          />
+          <p class="category-name-text">Garnituri</p>
+        </div>
+        <div onclick="checkWhichCategory(`Garnituri`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/dark/food-category-sosuri.svg"
+            alt=""
+          />
+          <p class="category-name-text">Sosuri</p>
+        </div>
+        <div onclick="checkWhichCategory(`Sosuri`)" class="dropdown">
+          <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <div class="category-name">
+          <img
+            class="category-name-ico"
+            src="img/icons/dark/food-category-desert.svg"
+            alt=""
+          />
+          <p class="category-name-text">Desert</p>
+        </div>
+        <div onclick="checkWhichCategory(`Desert`)" class="dropdown">
+          <img
+            class="menu-link-svg"
+            src="img/icons/light/link-light.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
