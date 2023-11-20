@@ -1,5 +1,8 @@
 const nav = document.querySelector('body > .nav-background');
 const presentation = document.querySelector('body > .presentation');
+
+const showFoodList = document.querySelectorAll('.foods')
+console.log(showFoodList)
 const rotateArrow = document.querySelectorAll('.arrow');
 const focusOnIcon = document.querySelectorAll('.category-name-ico');
 const focusOnText = document.querySelectorAll('.category-name-text');
@@ -29,7 +32,7 @@ const category = {
 
 function checkWhichCategory(typeOfCategory) {
   const categoryIndex = category[typeOfCategory];
-  if (categoryIndex !== undefined);
+
   rotate(categoryIndex);
   focus(categoryIndex);
 }
@@ -40,4 +43,5 @@ function focus(nodeList) {
   focusOnIcon[nodeList].classList.toggle("focus-icon");
   focusOnText[nodeList].classList.toggle("focus-text");
   focusOnBox[nodeList].classList.toggle("focus-box");
+  showFoodList[nodeList].classList.toggle("hidden")
 }
