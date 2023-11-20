@@ -56,7 +56,7 @@
   rotate: 180deg;
 }
 .focus-icon {
-  content: url("/img/icons/light/food-category-breakfast.svg");
+  filter: invert(1);
 }
 .focus-text {
   color: white;

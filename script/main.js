@@ -1,21 +1,22 @@
-const nav = document.getElementsByClassName("nav-background");
-const presentation = document.getElementsByClassName("presentation");
-
-window.onscroll = function() {
-  if(window.scrollY > nav[0].offsetTop) {
-    nav[0].classList.add("sticky");
-    presentation[0].classList.add("sticky");
-  } else {
-    nav[0].classList.remove("sticky");
-    presentation[0].classList.remove("sticky");
-  }
-}
-
-
+const nav = document.querySelector('body > .nav-background');
+const presentation = document.querySelector('body > .presentation');
 const rotateArrow = document.querySelectorAll('.arrow');
 const focusOnIcon = document.querySelectorAll('.category-name-ico');
 const focusOnText = document.querySelectorAll('.category-name-text');
 const focusOnBox = document.querySelectorAll('.category-name')
+
+function addClass (element1, element2, className) {
+  element1.classList.add(className);
+  element2.classList.add(className)
+}
+function removeClass (element1, element2, className) {
+  element1.classList.remove(className);
+  element2.classList.remove(className);
+}
+window.onscroll = () => {
+  window.scrollY > nav.offsetTop ? addClass (nav, presentation, "sticky") : removeClass (nav, presentation, "sticky");
+}
+
 const category = {
   "Breakfast": 0,
   "Burger": 1,
@@ -25,7 +26,6 @@ const category = {
   "Garnituri": 5,
   "Sosuri": 6
 };
-
 
 function checkWhichCategory(typeOfCategory) {
   const categoryIndex = category[typeOfCategory];
