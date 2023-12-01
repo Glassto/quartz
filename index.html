@@ -69,7 +69,7 @@
       </div>
     </nav>
 
-    <div class="presentation">
+    <section class="presentation">
       <div class="presentation-green-image">
         <div class="presentation-green-gradient">
           <p class="presentation-text">
@@ -98,9 +98,9 @@
           <img class="link-svg" src="img/icons/dark/link.svg" alt="" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="new-section">
+    <section class="new-section">
       <div class="new-section-title">
         <p class="new-section-text">NOU</p>
       </div>
@@ -113,20 +113,20 @@
           />
         </div>
         <div class="new-product-text">
-          <p class="new-product-title">Pui Teriaki</p>
+          <p class="new-product-title">Pui Teriyaki</p>
           <p class="new-product-description">
-            Este un fel de mâncare japoneză servit cu orez și legume.
+            Este un fel de mâncare japoneză servită cu orez și legume.
           </p>
           <p class="new-product-date">6 septembrie</p>
         </div>
         <div class="new-product-price">
-          <p class="changeable-text">30.00</p>
+          <p class="changeable-text">30.99</p>
           <p class="permanent-text">RON</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="menu-section">
+    <section class="menu-section">
       <div class="menu-section-title">
         <p class="menu-section-text">MENIU</p>
       </div>
@@ -140,14 +140,141 @@
           />
           <p class="category-name-text">Breakfast</p>
         </div>
-        <div onclick="checkWhichCategory(`Breakfast`)" class="dropdown">
+        <div onclick="checkWhichCategory(`0`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
       <div class="foods hidden">
-        <div class="food"></div>
-        <div class="food"></div>
-        <div class="food"></div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/omleta-cu-spanac.png"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Omletă cu Spanac</p>
+            <p class="food-description">
+              Este un fel de mâncare tradițional cu ouă și spanac.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">ouă</p>
+              <p class="ingredients">cheddar</p>
+              <p class="ingredients">baby spanac</p>
+              <p class="ingredients">pâine</p>
+              <p class="ingredients last">salată mix</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">27.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Omletă cu Șuncă și Cașcaval</p>
+            <p class="food-description">
+              Este un fel de mâncare tradițional cu ouă, șuncă și cașcaval.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">ouă</p>
+              <p class="ingredients">șuncă</p>
+              <p class="ingredients">cașcaval</p>
+              <p class="ingredients">pâine</p>
+              <p class="ingredients last">salată mix</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">27.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/oua-benedict.png"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Ouă Benedict</p>
+            <p class="food-description">
+              Este un fel de mâncare cu ouă, cașcaval și bacon.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">ouă</p>
+              <p class="ingredients">cașcaval</p>
+              <p class="ingredients">bacon</p>
+              <p class="ingredients">sos olandez</p>
+              <p class="ingredients last">salată mix</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.95</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Ochiuri cu Cartofi</p>
+            <p class="food-description">
+              Este un fel de mâncare cu ouă, bacon și cartofi pai.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">ouă</p>
+              <p class="ingredients">cașcaval</p>
+              <p class="ingredients">bacon</p>
+              <p class="ingredients">pâine</p>
+              <p class="ingredients last">cartofi prăjiți</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">27.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/quartz-breakfast.png"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Quartz Breakfast</p>
+            <p class="food-description">
+              Este un fel de mâncare exclusiv Quartz cu ouă, cașcaval și bacon.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">ouă</p>
+              <p class="ingredients">cașcaval</p>
+              <p class="ingredients">bacon</p>
+              <p class="ingredients">sos olandez</p>
+              <p class="ingredients last">salată mix</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">29.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
       </div>
 
       <div class="menu-category">
@@ -159,8 +286,114 @@
           />
           <p class="category-name-text">Burger</p>
         </div>
-        <div onclick="checkWhichCategory(`Burger`)" class="dropdown">
+        <div onclick="checkWhichCategory(`1`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+      <div class="foods hidden">
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Chicken Burger</p>
+            <p class="food-description">
+              Este un burger cu carne de pui și salată.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">salată</p>
+              <p class="ingredients">roșii deshidratate</p>
+              <p class="ingredients">sos Aioli</p>
+              <p class="ingredients last">parmezan</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">28.95</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Cheese Burger</p>
+            <p class="food-description">
+              Este un burger cu carne de vită și brânză cheddar.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">salată</p>
+              <p class="ingredients">roșii deshidratate</p>
+              <p class="ingredients">sos Aioli</p>
+              <p class="ingredients last">parmezan</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Spicy Burger</p>
+            <p class="food-description">
+              Este un burger cu carne de vită și ardei jalapeno.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">salată</p>
+              <p class="ingredients">roșii deshidratate</p>
+              <p class="ingredients">sos Aioli</p>
+              <p class="ingredients last">parmezan</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.80</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Golden Burger</p>
+            <p class="food-description">
+              Este un burger premium cu carne de vită, bacon și salată.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">salată</p>
+              <p class="ingredients">roșii deshidratate</p>
+              <p class="ingredients">sos Aioli</p>
+              <p class="ingredients last">parmezan</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">33.99</p>
+            <p class="permanent-text">RON</p>
+          </div>
         </div>
       </div>
 
@@ -173,8 +406,137 @@
           />
           <p class="category-name-text">Main Course</p>
         </div>
-        <div onclick="checkWhichCategory(`Main Course`)" class="dropdown">
+        <div onclick="checkWhichCategory(`2`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
+        </div>
+      </div>
+      <div class="foods hidden">
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Piept de Pui la Grătar</p>
+            <p class="food-description">
+              Este un meniu care vine cu carne de pui, orez și roșii.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">spanac</p>
+              <p class="ingredients">roșii</p>
+              <p class="ingredients">orez</p>
+              <p class="ingredients last">sos</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">27.90</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Aripioare de Pui</p>
+            <p class="food-description">
+              Este un meniu care vine cu aripioare picante, cartofi dippers și
+              telemea.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">aripioare picante</p>
+              <p class="ingredients">cartofi dippers</p>
+              <p class="ingredients">telemea</p>
+              <p class="ingredients last">sos</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.90</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Crispy de Pui</p>
+            <p class="food-description">
+              Este un meniu care vine cu carne de pui, cartofi dippers și sos.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">crispy de pui</p>
+              <p class="ingredients">cartofi dippers</p>
+              <p class="ingredients">telemea</p>
+              <p class="ingredients last">sos</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.90</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Pui Teriyaki</p>
+            <p class="food-description">
+              Este un fel de mâncare japoneză servită cu orez și legume.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">brocolli sote</p>
+              <p class="ingredients">orez basmati</p>
+              <p class="ingredients last">sos teriyaki</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.90</p>
+            <p class="permanent-text">RON</p>
+          </div>
+        </div>
+        <div class="food">
+          <div class="div-food-image">
+            <img
+              class="food-image"
+              src="img/images/menu/img-lipsa.svg"
+              alt=""
+            />
+          </div>
+          <div class="food-text">
+            <p class="food-title">Pui a`la Quartz</p>
+            <p class="food-description">
+              Este un fel de mâncare japoneză servită cu orez și legume.
+            </p>
+            <div class="food-ingredients">
+              <p class="ingredients first">piept de pui</p>
+              <p class="ingredients">brocolli sote</p>
+              <p class="ingredients">orez basmati</p>
+              <p class="ingredients last">sos teriyaki</p>
+            </div>
+          </div>
+          <div class="new-product-price">
+            <p class="changeable-text">31.90</p>
+            <p class="permanent-text">RON</p>
+          </div>
         </div>
       </div>
 
@@ -187,7 +549,7 @@
           />
           <p class="category-name-text">Paste</p>
         </div>
-        <div onclick="checkWhichCategory(`Paste`)" class="dropdown">
+        <div onclick="checkWhichCategory(`3`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
@@ -201,7 +563,7 @@
           />
           <p class="category-name-text">Salate</p>
         </div>
-        <div onclick="checkWhichCategory(`Salate`)" class="dropdown">
+        <div onclick="checkWhichCategory(`4`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
@@ -215,7 +577,7 @@
           />
           <p class="category-name-text">Garnituri</p>
         </div>
-        <div onclick="checkWhichCategory(`Garnituri`)" class="dropdown">
+        <div onclick="checkWhichCategory(`5`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
@@ -229,7 +591,7 @@
           />
           <p class="category-name-text">Sosuri</p>
         </div>
-        <div onclick="checkWhichCategory(`Sosuri`)" class="dropdown">
+        <div onclick="checkWhichCategory(`6`)" class="dropdown">
           <img class="arrow" src="img/icons/light/chevron-down.svg" alt="" />
         </div>
       </div>
@@ -243,7 +605,7 @@
           />
           <p class="category-name-text">Desert</p>
         </div>
-        <div onclick="checkWhichCategory(`Desert`)" class="dropdown">
+        <div onclick="checkWhichCategory(`7`)" class="dropdown">
           <img
             class="menu-link-svg"
             src="img/icons/light/link-light.svg"
@@ -251,7 +613,7 @@
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="wrk-progress">
       <p class="wrk-text">work in progress</p>

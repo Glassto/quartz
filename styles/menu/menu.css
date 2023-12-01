@@ -27,7 +27,7 @@
   height: 54px;
   padding: 0px 0 0px 30px;
   gap: 30px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: 2px solid #6da610;
 }
 .category-name-text {
@@ -44,26 +44,34 @@
 
   height: 54px;
   width: 54px;
-  border-radius: 4px;
-  border: 2px solid #6aa310;
-  background: linear-gradient(90deg, #6aa310 0%, #599711 96.76%);
+  border-radius: 3px;
+
+  background: linear-gradient(90deg, #6aa310 0%, #599711 96.76%) padding-box,
+    linear-gradient(90deg, #6aa310 0%, #599711 96.76%) border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
 }
 .arrow {
   transition: 0.2s ease-out;
 }
 .rotate {
+  -webkit-transition: 0.2 ease-out;
   transition: 0.2s ease-out;
   rotate: 180deg;
 }
-.focus-icon {
+.focus-icon,
+.focus-text {
   filter: invert(1);
 }
-.focus-text {
-  color: white;
-}
 .focus-box {
-  background: linear-gradient(90deg, #6aa310 38.68%, #599711 91.18%);
+  background: linear-gradient(90deg, #6aa310 38.68%, #599711 91.18%) padding-box,
+    linear-gradient(90deg, #6aa310 0%, #599711 96.76%) border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
 }
+
 .menu-link-svg {
   height: 20px;
 }

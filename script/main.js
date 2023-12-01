@@ -1,7 +1,6 @@
 const nav = document.querySelector('body > .nav-background');
 const presentation = document.querySelector('body > .presentation');
-
-const showFoodList = document.querySelectorAll('.foods')
+const showFoodList = document.querySelectorAll('.foods');
 console.log(showFoodList)
 const rotateArrow = document.querySelectorAll('.arrow');
 const focusOnIcon = document.querySelectorAll('.category-name-ico');
@@ -20,21 +19,9 @@ window.onscroll = () => {
   window.scrollY > nav.offsetTop ? addClass (nav, presentation, "sticky") : removeClass (nav, presentation, "sticky");
 }
 
-const category = {
-  "Breakfast": 0,
-  "Burger": 1,
-  "Main Course": 2,
-  "Paste": 3,
-  "Salate": 4,
-  "Garnituri": 5,
-  "Sosuri": 6
-};
-
-function checkWhichCategory(typeOfCategory) {
-  const categoryIndex = category[typeOfCategory];
-
-  rotate(categoryIndex);
-  focus(categoryIndex);
+function checkWhichCategory(menuList) {
+  rotate(menuList);
+  focus(menuList);
 }
 function rotate(nodeList) {
   rotateArrow[nodeList].classList.toggle("rotate");
