@@ -32,6 +32,14 @@
   row-gap: 8px;
   margin-right: 20px;
 }
+.exceptions {
+  display: flex;
+  align-items: center;
+  height: 70px;
+}
+.narrow {
+  padding: 10px 30px 10px 30px;
+}
 .food-title {
   margin: 0;
 
@@ -102,6 +110,9 @@
     display: flex;
     align-items: center;
   }
+  .narrow {
+    padding: 10px 30px 10px 30px;
+  }
   .food-description {
     display: none;
   }
@@ -135,5 +146,8 @@
     height: 50px;
     display: flex;
     align-items: center;
+  }
+  .narrow {
+    padding: 8px 30px 8px 30px;
   }
 }
