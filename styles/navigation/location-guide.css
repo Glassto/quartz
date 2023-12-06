@@ -7,28 +7,21 @@
   text-transform: uppercase;
   font-family: Nunito;
   font-size: 14px;
+  transition: all 0.4s ease-out;
 }
 .location-guide-svg {
   width: 18px;
   height: 18px;
+  transition: all 0.4s ease-out;
 }
 .p-location-guide {
   margin: 0;
   padding: 12px 0px;
-}
-
-.target-L,
-.target-ST,
-.target-S {
-  color: white;
+  transition: all 0.4s ease-out;
 }
 
 /* Laptop */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .target-L {
-    color: black;
-  }
-
   .location-guide {
     display: flex;
     align-items: center;
@@ -47,10 +40,6 @@
 
 /* Tablets */
 @media (min-width: 526px) and (max-width: 768px) {
-  .target-ST {
-    color: black;
-  }
-
   .location-guide {
     display: flex;
     align-items: center;
@@ -69,10 +58,6 @@
 
 /* Mobile S-L */
 @media (min-width: 320px) and (max-width: 526px) {
-  .target-S {
-    color: black;
-  }
-
   .location-guide {
     text-transform: uppercase;
     font-family: Nunito;

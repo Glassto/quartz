@@ -17,6 +17,7 @@
 
   margin: 30px 80px 0 80px;
   gap: 14px;
+  transition: all 0.4s ease-out;
 }
 .category-name {
   display: flex;
@@ -29,6 +30,7 @@
   gap: 30px;
   border-radius: 3px;
   border: 2px solid #6da610;
+  transition: all 0.4s ease-out;
 }
 .category-name-text {
   margin: 0;
@@ -51,13 +53,14 @@
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
+
+  transition: all 0.4s ease-out;
 }
 .arrow {
+  -webkit-transition: 0.2 ease-out;
   transition: 0.2s ease-out;
 }
 .rotate {
-  -webkit-transition: 0.2 ease-out;
-  transition: 0.2s ease-out;
   rotate: 180deg;
 }
 .focus-icon,

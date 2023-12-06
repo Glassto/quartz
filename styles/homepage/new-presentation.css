@@ -1,5 +1,6 @@
 section.sticky {
   margin-top: 115px;
+  transition: all 0.4s ease-out;
 }
 .presentation-green-image {
   display: flex;
@@ -8,6 +9,7 @@ section.sticky {
   gap: 5px;
 
   margin: 50px 80px 0 80px;
+  transition: all 0.4s ease-out;
 }
 
 .presentation-green-gradient {
@@ -22,11 +24,13 @@ section.sticky {
     rgba(81, 146, 17, 0) 100%
   );
   border-radius: 4px;
+  transition: all 0.4s ease-out;
 }
 
 .presentation-img {
   margin-left: -250px;
   height: 330px;
+  transition: all 0.4s ease-out;
 }
 
 .presentation-text {
@@ -38,10 +42,12 @@ section.sticky {
   text-transform: uppercase;
   text-wrap: balance;
   letter-spacing: 1.5px;
+  transition: all 0.2s ease-out;
 }
 .presentation-special-text {
   display: block;
   margin-bottom: 10px;
+  transition: all 0.4s ease-out;
 }
 
 /* @media (min-width: 1153px) and (max-width: 1366px) {  
@@ -125,6 +131,7 @@ section.sticky {
 @media (min-width: 525px) and (max-width: 768px) {
   .presentation-img {
     display: none;
+    transition: all 0.4s ease-out;
   }
   .presentation-green-image {
     justify-content: center;

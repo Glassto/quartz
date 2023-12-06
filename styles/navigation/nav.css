@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  transition: all 0.4s ease-out;
 }
 
 nav.sticky {
@@ -9,7 +10,7 @@ nav.sticky {
   width: 100%;
   z-index: 10;
 
-  transition: animate__fadeInUp;
+  transition: all 0.4s ease-out;
 }
 
 .nav-background {
@@ -24,9 +25,11 @@ nav.sticky {
   overflow: hidden;
   box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1),
     0px -4px 6px -4px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-out;
 }
 .nav-menu-svg {
   display: none;
+  transition: all 0.4s ease-out;
 }
 
 .nav-menu-logo {
@@ -39,6 +42,7 @@ nav.sticky {
   font-size: 32px;
   font-family: Poppins;
   font-weight: 300;
+  transition: all 0.4s ease-out;
 }
 .nav-quick-menu {
   margin-right: 80px;
@@ -46,6 +50,7 @@ nav.sticky {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  transition: all 0.4s ease-out;
 }
 .nav-quick-menu-button-foodmenu,
 .nav-quick-menu-button-contact {
@@ -58,6 +63,7 @@ nav.sticky {
   border-width: 1px;
   border-radius: 10px;
   background-color: transparent;
+  transition: all 0.4s ease-out;
 }
 .nav-quick-menu-button-call {
   display: inline-flex;
@@ -70,6 +76,7 @@ nav.sticky {
   border-width: 1px;
   border-radius: 4px;
   background: linear-gradient(180deg, #6da610 0%, #519211 100%);
+  transition: all 0.4s ease-out;
 }
 .nav-quick-menu-button-call-text {
   margin: 0;
@@ -80,10 +87,12 @@ nav.sticky {
   font-size: 16px;
   text-transform: uppercase;
   color: white;
+  transition: all 0.4s ease-out;
 }
 .nav-quick-menu-button-call-svg {
   width: 22px;
   height: 22px;
+  transition: all 0.4s ease-out;
 }
 
 /* Portrait Tablet */
