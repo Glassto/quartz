@@ -1,0 +1,43 @@
+.side-menu {
+  display: none;
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  .side-menu {
+    height: 100%;
+    width: 0px; /* 144px */
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    z-index: 99;
+    top: 113px;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+    background-color: white;
+    box-shadow: 4px 0px 6px -4px rgba(0, 0, 0, 0.2);
+    transition: width 0.8s;
+  }
+  .side-menu.open {
+    width: 184px;
+  }
+  .side-menu.sticky {
+    top: 70px;
+  }
+
+  .side-menu li {
+    margin: 9px 10px 3px 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    gap: 10px;
+  }
+  .side-menu li:hover {
+    padding: 8px 16px;
+  }
+}

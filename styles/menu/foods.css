@@ -79,7 +79,12 @@
 
   padding: 4px 16px;
   border-radius: 4px;
-  background: #c6d9ea;
+  background: linear-gradient(
+    90deg,
+    rgba(198, 217, 234, 0.5) 0.05%,
+    #e4f4ff 33.35%,
+    rgba(198, 217, 234, 0.5) 99.94%
+  );
   transition: all 0.4s ease-out;
 }
 .first {

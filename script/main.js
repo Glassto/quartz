@@ -8,6 +8,9 @@ const focusOnBox = document.querySelectorAll('.category-name');
 const reviewBoxes = document.querySelectorAll('.review-box');
 const nextButton = document.getElementById('next-btn');
 const prevButton = document.getElementById('prev-btn');
+const reviewOptions = document.getElementsByClassName('dropdown-content');
+const hideWrkButton = document.getElementsByClassName('wrk-progress');
+const sidemenu = document.getElementById('js-side-menu');
 
 function addClass (element1, className) {
   element1.classList.add(className);
@@ -19,9 +22,12 @@ function removeClass (element1, className) {
 window.onscroll = () => {
    window.scrollY > nav.offsetTop ? addClass (nav, "sticky") : removeClass (nav,  "sticky");
    window.scrollY > nav.offsetTop ? addClass (presentation, "sticky") : removeClass (presentation,  "sticky");
+   window.scrollY > nav.offsetTop ? addClass (sidemenu, "sticky") : removeClass (sidemenu, "sticky")
 }
 
-
+function openSideMenu() {
+  sidemenu.classList.toggle("open")
+}
 
 function checkWhichCategory(menuList) {
   rotate(menuList);
@@ -35,6 +41,9 @@ function focus(nodeList) {
   focusOnText[nodeList].classList.toggle("focus-text");
   focusOnBox[nodeList].classList.toggle("focus-box");
   showFoodList[nodeList].classList.toggle("hidden");
+}
+function closeWrk(nodeList) {
+  addClass(hideWrkButton[nodeList], "hide-wrk")
 }
 
 
@@ -65,5 +74,13 @@ function prevBox() {
     showBoxes(visibleBox)
   }
 }
-
 showBoxes(visibleBox);
+
+function openDropdown() {
+  let i;
+  for (i=0; i<=reviewOptions.length; i++) {
+    reviewOptions[i].classList.toggle('show')
+    console.log(i)
+  }
+  
+}

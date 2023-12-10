@@ -23,19 +23,20 @@
     />
     <link rel="stylesheet" href="styles/navigation/location-guide.css" />
     <link rel="stylesheet" href="styles/navigation/nav.css" />
+    <link rel="stylesheet" href="styles/navigation/mobile-menu.css" />
     <link rel="stylesheet" href="styles/homepage/new-presentation.css" />
     <link rel="stylesheet" href="styles/homepage/rating.css" />
-    <link rel="stylesheet" href="styles/new/new.css" />
+    <link rel="stylesheet" href="styles/new.css" />
     <link rel="stylesheet" href="styles/menu/menu.css" />
     <link rel="stylesheet" href="styles/menu/foods.css" />
-    <link rel="stylesheet" href="styles/reviews/reviews.css" />
+    <link rel="stylesheet" href="styles/reviews.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <script src="script/main.js" defer></script>
     <title>Quartz</title>
   </head>
   <style>
     body {
       margin: 0px;
-      margin-bottom: 500px;
       @media (max-width: 319px) {
         display: none;
       }
@@ -49,7 +50,12 @@
 
     <nav class="nav-background">
       <div class="nav-menu-logo">
-        <img class="nav-menu-svg" src="img/icons/dark/nav-menu.svg" alt="" />
+        <img
+          class="nav-menu-svg"
+          onclick="openSideMenu()"
+          src="img/icons/dark/nav-menu.svg"
+          style="cursor: pointer"
+        />
         <p class="nav-logo-text">Quartz</p>
       </div>
       <div class="nav-quick-menu">
@@ -57,6 +63,7 @@
         <button class="nav-quick-menu-button-contact">Contact</button>
         <button class="nav-quick-menu-button-call">
           <img
+            id="js-side-menu-button"
             class="nav-quick-menu-button-call-svg"
             src="img/icons/light/phone.svg"
             alt=""
@@ -810,36 +817,201 @@
         </div>
       </div>
     </section>
-    <!-- 
+
     <section class="reviews-section">
       <div class="reviews-section-header">
         <p class="section-text reviews-text">RECENZII</p>
-        <a class="reviews-links" href="">
-          <img src="img/icons/dark/write-review.svg" alt="" />
-          Scrie o recenzie</a
-        >
-        <a class="reviews-links" href="">
-          <img src="img/icons/dark/help.svg" alt="" />
-          Află mai multe</a
+        <a class="reviews-links" href="#">
+          <img
+            class="review-svg"
+            src="img/icons/dark/write-review.svg"
+            alt=""
+          />
+          <p class="reviews-header-text">Scrie o recenzie</p>
+        </a>
+        <a class="reviews-links" href="#">
+          <img class="review-svg" src="img/icons/dark/help.svg" alt="" />
+          <p class="reviews-header-text">Află mai multe</p></a
         >
       </div>
       <div class="reviews">
-        <a id="prev-btn" onclick="prevBox()" href="javascript:void(0)"
-          ><img src="img/icons/dark/arrow-left.svg" alt=""
-        /></a>
-        <div class="review-box">first</div>
-        <div class="review-box">second</div>
-        <div class="review-box">third</div>
-        <div class="review-box">fourth</div>
-        <a id="next-btn" onclick="nextBox()" href="javascript:void(0)"
-          ><img src="img/icons/dark/arrow-right.svg" alt=""
-        /></a>
+        <img
+          class="prev-btn"
+          style="cursor: pointer"
+          onclick="prevBox()"
+          src="img/icons/dark/arrow-left.svg"
+          alt=""
+        />
+        <div class="review-box">
+          <div class="review-box-user">
+            <p class="review-username">Liviu Ștefan</p>
+            <p class="review-date">&bull; acum 3 luni</p>
+            <div onclick="openDropdown()" class="options-dropdown">
+              <img class="review-options" src="img/icons/dark/options.svg" />
+              <div class="dropdown-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    gap: 20px;
+                    font-family: Outfit;
+                    font-weight: 300;
+                  "
+                >
+                  <img src="img/icons/dark/flag.svg" alt="" />
+                  <p>Semnalează</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-box-text">
+            <p class="user-review">
+              “Mâncarea este... O.A.U. Felicitări tuturor!”
+            </p>
+          </div>
+          <div class="review-box-rating">
+            <div class="line"></div>
+            <img
+              style="height: 20px; width: 120px"
+              src="img/icons/dark/review-4stars.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-box-user">
+            <p class="review-username">olaru d</p>
+            <p class="review-date">&bull; acum 11 luni</p>
+            <div onclick="openDropdown()" class="options-dropdown">
+              <img class="review-options" src="img/icons/dark/options.svg" />
+              <div class="dropdown-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    gap: 20px;
+                    font-family: Outfit;
+                    font-weight: 300;
+                  "
+                >
+                  <img src="img/icons/dark/flag.svg" alt="" />
+                  <p>Semnalează</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-box-text">
+            <p class="user-review">
+              “Preparate foarte bune, delicioase, atent selectate si gatite
+              impecabil la preturi rezonabile! Personal amabil și atmosferă
+              plăcută! Recomand cu încredere!”
+            </p>
+          </div>
+          <div class="review-box-rating">
+            <div class="line"></div>
+            <img
+              style="height: 20px; width: 120px"
+              src="img/icons/dark/review-5stars.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="review-box-user">
+            <p class="review-username">BM</p>
+            <p class="review-date">&bull; acum 1 an</p>
+            <div onclick="openDropdown()" class="options-dropdown">
+              <img class="review-options" src="img/icons/dark/options.svg" />
+              <div class="dropdown-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    gap: 20px;
+                    font-family: Outfit;
+                    font-weight: 300;
+                  "
+                >
+                  <img src="img/icons/dark/flag.svg" alt="" />
+                  <p>Semnalează</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-box-text">
+            <p class="user-review">
+              “Mancare buna, ambianta placuta, personal dragut. Este un local
+              mic, cochet potrivit atat pentru o masa in 2 cat si pentru o
+              iesire cu prietenii”
+            </p>
+          </div>
+          <div class="review-box-rating">
+            <div class="line"></div>
+            <img
+              style="height: 20px; width: 120px"
+              src="img/icons/dark/review-5stars.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <img
+          class="next-btn"
+          style="cursor: pointer"
+          onclick="nextBox()"
+          src="img/icons/dark/arrow-right.svg"
+          alt=""
+        />
       </div>
-    </section> -->
+      <div class="mobile-btn">
+        <img
+          class="mobile-prev-btn"
+          style="cursor: pointer"
+          onclick="prevBox()"
+          src="img/icons/dark/arrow-left.svg"
+          alt=""
+        />
+        <img
+          class="mobile-next-btn"
+          style="cursor: pointer"
+          onclick="nextBox()"
+          src="img/icons/dark/arrow-right.svg"
+          alt=""
+        />
+      </div>
+    </section>
 
-    <div class="wrk-progress">
-      <p class="wrk-text">work in progress</p>
+    <footer>
+      <div class="footer-background">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <p class="footer-logo-text">Quartz</p>
+            <p class="footer-copyright">©2023</p>
+          </div>
+          <div class="privacy-documentation">
+            <div class="footer-privacy">Politica de Confidențialitate</div>
+            <div style="flex: 1"></div>
+            <div class="footer-privacy">Termeni & Condiții</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="side-menu" id="js-side-menu">
+      <li class="nav-quick-menu-button-foodmenu">Meniu</li>
+      <li class="nav-quick-menu-button-contact">Contact</li>
     </div>
+
+    <!--<div class="wrk-progress"> 
+      <p class="wrk-text">work in progress</p>
+      <img
+        onclick="closeWrk(0)"
+        class="close-wrk-progress"
+        src="img/icons/dark/close.svg"
+        alt=""
+      />
+    </div> -->
     <style>
       ::-webkit-scrollbar {
         width: 4px;
@@ -875,9 +1047,15 @@
         letter-spacing: 0.3px;
         font-size: 14px;
       }
-      .cookies-hide {
+      .hide-wrk {
         display: none;
-        transition: 0.5 ease-in-out;
+      }
+      .close-wrk-progress {
+        position: absolute;
+        filter: drop-shadow(-1px 1px 8px rgba(0, 0, 0, 0.9));
+        right: 26px;
+        bottom: 18px;
+        cursor: pointer;
       }
     </style>
   </body>
