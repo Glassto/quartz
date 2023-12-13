@@ -1,0 +1,132 @@
+.menu-section-title {
+  display: flex;
+  justify-content: center;
+}
+.menu-section-text {
+  font-family: Outfit;
+  font-weight: 800;
+  font-size: 30px;
+
+  margin: 70px 0 0 0;
+}
+
+.menu-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 30px 80px 0 80px;
+  gap: 14px;
+  transition: all 0.4s ease-out;
+}
+.category-name {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
+
+  height: 54px;
+  padding: 0px 0 0px 30px;
+  gap: 30px;
+  border-radius: 3px;
+  border: 2px solid #6da610;
+  transition: all 0.4s ease-out;
+}
+.category-name-text {
+  margin: 0;
+
+  font-family: Outfit;
+  font-weight: 500;
+  font-size: 24px;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 54px;
+  width: 54px;
+  border-radius: 3px;
+
+  background: linear-gradient(90deg, #6aa310 0%, #599711 96.76%) padding-box,
+    linear-gradient(90deg, #6aa310 0%, #599711 96.76%) border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+
+  transition: all 0.4s ease-out;
+}
+.arrow {
+  -webkit-transition: 0.2 ease-out;
+  transition: 0.2s ease-out;
+}
+.rotate {
+  rotate: 180deg;
+}
+.focus-icon,
+.focus-text {
+  filter: invert(1);
+}
+.focus-box {
+  background: linear-gradient(90deg, #6aa310 38.68%, #599711 91.18%) padding-box,
+    linear-gradient(90deg, #6aa310 0%, #599711 96.76%) border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.menu-link-svg {
+  height: 20px;
+}
+
+/* Tablets */
+@media (min-width: 525px) and (max-width: 768px) {
+  .menu-section-text {
+    font-size: 24px;
+  }
+  .menu-category {
+    margin: 30px 30px 0 30px;
+  }
+  .category-name-text {
+    font-size: 20px;
+  }
+}
+
+/* Mobile S-L */
+@media (min-width: 320px) and (max-width: 525px) {
+  .menu-section-text {
+    margin: 50px 0 0 0;
+    font-size: 20px;
+  }
+  .menu-category {
+    margin: 20px 30px 0 30px;
+    gap: 10px;
+  }
+  .category-name {
+    height: 44px;
+    padding-left: 20px;
+    gap: 20px;
+  }
+  .category-name-text {
+    font-size: 18px;
+  }
+  .category-name-ico {
+    width: 16px;
+  }
+  .dropdown {
+    height: 44px;
+    width: 44px;
+  }
+  .arrow0,
+  .arrow1,
+  .arrow2,
+  .arrow3,
+  .arrow4,
+  .arrow5,
+  .arrow6 {
+    height: 18px;
+  }
+  .menu-link-svg {
+    height: 18px;
+  }
+}
