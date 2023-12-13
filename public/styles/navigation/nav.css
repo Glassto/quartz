@@ -50,7 +50,7 @@ nav.sticky {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 42px;
+  gap: 36px;
   transition: all 0.4s ease-out;
 }
 .nav-quick-menu-button {

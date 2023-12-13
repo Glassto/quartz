@@ -40,6 +40,10 @@
       @media (max-width: 319px) {
         display: none;
       }
+      p,
+      img {
+        user-select: none;
+      }
     }
   </style>
   <body>
@@ -1008,7 +1012,14 @@
           </div>
         </div>
       </div>
+      <div
+        style="
+          height: 47px;
+          background: linear-gradient(180deg, #6da610 0%, #519211 100%);
+        "
+      ></div>
     </footer>
+
     <div class="side-menu" id="js-side-menu">
       <img
         onclick="openSideMenu()"
@@ -1025,15 +1036,9 @@
       <li class="nav-quick-menu-button">Contact</li>
     </div>
 
-    <!--<div class="wrk-progress"> 
+    <div class="wrk-progress">
       <p class="wrk-text">work in progress</p>
-      <img
-        onclick="closeWrk(0)"
-        class="close-wrk-progress"
-        src="public/icons/dark/close.svg"
-        alt=""
-      />
-    </div> -->
+    </div>
     <style>
       ::-webkit-scrollbar {
         width: 4px;

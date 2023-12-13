@@ -10,6 +10,7 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+  transition: all 0.4s ease-out;
 }
 .footer-logo {
   display: flex;
@@ -58,6 +59,16 @@
 
 /* Tablets */
 @media (min-width: 525px) and (max-width: 768px) {
+  .footer-content {
+    margin: 0 30px;
+  }
+  .footer-privacy {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  .footer-copyright {
+    display: none;
+  }
 }
 
 /* Mobile S-L */
@@ -69,10 +80,11 @@
     display: none;
   }
   .privacy-documentation {
+    width: 100%;
     justify-content: space-between;
   }
   .footer-privacy {
-    padding: 12px 20px;
+    padding: 12px 24px;
     font-size: 12px;
   }
 }
