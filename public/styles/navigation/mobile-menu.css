@@ -1,5 +1,8 @@
+.side-menu {
+  display: none;
+}
 /* Small Tablets */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .side-menu {
     height: 100%;
     width: 0px; /* 144px */
@@ -24,7 +27,7 @@
   }
   .side-menu.sticky {
     top: 0px;
-    transition: all 0.2s ease-out;
+    transition: all 0.4s ease-out;
   }
 
   .side-menu li {
@@ -47,5 +50,12 @@
     top: 83px;
     right: 12px;
     cursor: pointer;
+  }
+}
+
+/* Mobile S-L */
+@media (min-width: 320px) and (max-width: 525px) {
+  .side-menu.open {
+    width: 146px;
   }
 }

@@ -74,7 +74,7 @@
 /* Mobile S-L */
 @media (min-width: 320px) and (max-width: 525px) {
   .footer-content {
-    margin: 0 30px;
+    margin: 0 20px;
   }
   .footer-logo {
     display: none;
@@ -87,10 +87,4 @@
     padding: 12px 24px;
     font-size: 12px;
   }
-}
-
-/* Exceptions */
-@media (min-width: 480px) and (max-width: 520px) {
-}
-@media (max-width: 480px) {
 }

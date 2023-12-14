@@ -86,7 +86,7 @@
     font-size: 24px;
   }
   .menu-category {
-    margin: 30px 30px 0 30px;
+    margin: 30px 20px 0 20px;
   }
   .category-name-text {
     font-size: 20px;
@@ -100,7 +100,7 @@
     font-size: 20px;
   }
   .menu-category {
-    margin: 20px 30px 0 30px;
+    margin: 20px 20px 0 20px;
     gap: 10px;
   }
   .category-name {
