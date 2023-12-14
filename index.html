@@ -23,7 +23,11 @@
     />
     <link rel="stylesheet" href="public/styles/navigation/location-guide.css" />
     <link rel="stylesheet" href="public/styles/navigation/nav.css" />
-    <link rel="stylesheet" href="public/styles/navigation/mobile-menu.css" />
+    <link
+      rel="stylesheet"
+      href="public/styles/navigation/mobile-menu.css"
+      media="screen and (max-width: 767px)"
+    />
     <link rel="stylesheet" href="public/styles/homepage/new-presentation.css" />
     <link rel="stylesheet" href="public/styles/homepage/rating.css" />
     <link rel="stylesheet" href="public/styles/new.css" />
@@ -40,7 +44,7 @@
       @media (max-width: 319px) {
         display: none;
       }
-      p,
+      a,
       img {
         user-select: none;
       }
@@ -860,7 +864,11 @@
             <p class="review-username">Liviu Ștefan</p>
             <p class="review-date">&bull; acum 3 luni</p>
             <div onclick="openDropdown()" class="options-dropdown">
-              <img class="review-options" src="public/icons/dark/options.svg" />
+              <img
+                class="review-options"
+                src="public/icons/dark/options.svg"
+                alt=""
+              />
               <div class="dropdown-content">
                 <div
                   class="report"
@@ -1020,7 +1028,7 @@
       ></div>
     </footer>
 
-    <div class="side-menu" id="js-side-menu">
+    <div style="display: none" class="side-menu" id="js-side-menu">
       <img
         onclick="openSideMenu()"
         class="close-menu-btn"
