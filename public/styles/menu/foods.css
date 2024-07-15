@@ -3,8 +3,6 @@
   transition: all 0.4s ease-out;
 }
 .food-image {
-  height: 130px;
-  width: 181px;
   margin-right: 20px;
   border-radius: 4px;
   transition: all 0.4s ease-out;
